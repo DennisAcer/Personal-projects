@@ -1,0 +1,446 @@
+
+/* Background Image styling and positioning*/
+.bgimage{
+  background-image: linear-gradient(to right,rgba(0,0,0,0.6),hsla(180, 100%, 50%, 0.5) ) ,url('../image/IBT-logos.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  margin: 0px;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  max-width: 100%;
+}
+
+/* container to hold the nav bar*/
+.container1{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 20px;
+  /*background-color: rgba(0, 0, 0, 0.3);*/
+}
+
+/*styling for the main class*/
+.main{
+  display: flex;
+  margin: 10px;
+  font-family: Cursive;
+}
+
+/* styling for the h2 head*/
+.main h2{
+  color: #fff;
+  margin: 10px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 2em;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+/* styling for hover effects of the main h2 tag*/
+.main h2:hover{
+  color: hsl(180, 100%, 50%);
+}
+
+/* avatar class for inclusion of an avatar*/
+.avatar{
+  vertical-align: middle;
+  width: 100px;
+  height: 70px;
+  border-radius: 20%;
+}
+
+/* display for the navbar  */
+.navbar ul{
+  display: flex;
+  margin: 20px 10px;
+
+}
+
+/* clearing list style  */
+ul li{
+  list-style: none;
+
+}
+
+/* styling links in navbar  */
+ul li a{
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  transition: .3s ease-out;
+}
+
+/* adding hover effect for links in nva bar  */
+ul li a:hover{
+  color:aqua;
+  font-size: 1.1em;
+}
+
+/* text over laid on image positioning  */
+ .slogan{
+  font-size: 1.7em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-shadow: 1px 1px 5px darkblue, 0 0 25px black;
+  font-family: 'roboto',sans-serif;
+  transform: translate(-50%, -50%);
+} 
+
+/* paragraph over image styling */
+.slogan p{
+  font-family: Garamond, serif;
+  font-style: italic;
+}
+
+/* heading for the various sections  */
+.heading{
+  font-family: 'roboto',sans-serif;
+  margin-top: 2px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  text-shadow: 0px 0 2px hsla(180, 100%, 50%, 0.9);
+  background-color: whitesmoke;
+  height: 85px;
+}
+
+/* paragraph text attached to headings sizing */
+.heading p{
+  font-size: 0.5em;
+  margin: 10px;
+  text-shadow: none;
+}
+
+/* styling for the container class for cards*/
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0, 0, 0, 0.6) ) ,url(../image/IBT-logos_black.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+ 
+}
+
+/* styling for the various cards */
+.card{
+  background: rgba(255,255,255,0.7);
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* styling for card image background and size */
+.card-image{
+  background-color: aquamarine;
+  height: 250px;
+  margin-bottom: 20px;
+  background-size: cover;
+  border-radius: 20px 20px 5px 5px ;
+}
+
+/* addition of image for the card  */
+.image-1{
+  background-image: url('../image/code-1.jpg')
+}
+/* addition of image for the card  */
+.image-2{
+  background-image: url('../image/code-2.jpg')
+}
+/* addition of image for the card  */
+.image-3{
+  background-image: url('../image/graphic.jpg')
+}
+/* addition of image for the card  */
+.image-4{
+  background-image: url('../image/game.jpg')
+}
+/* addition of image for the card  */
+.image-5{
+  background-image: url('../image/hard.jpg')
+}
+/* addition of image for the card  */
+.image-6{
+  background-image: url('../image/windows.jpg')
+}
+/* addition of image for the card  */
+.image-7{
+  background-image: url('../image/code-3.jpg')
+}
+/* addition of image for the card  */
+.image-8{
+  background-image: url('../image/code-4.jpg')
+}
+
+/* styling for the text in the card */
+.text{
+  text-align: center;
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* styling for the text in the card */
+.card p{
+  padding: 10px;
+}
+
+/* styling for the link in the card  */
+.card a{
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 70px;
+  font-weight: bold;
+  border: 2px solid  rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+/* hover effect for link in card  */
+.card a:hover{
+  font-size: large;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* background styling and sizing of holder class */
+.holder{
+  display: flex;
+  background-color: black;
+  background:  linear-gradient(to left,rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7) ) ,url(../image/home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* card-1 styling */
+.card-1{
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+/* card-1 h3 styling */
+.card-1 h3{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2em;
+  text-align: center;
+  padding: 5px;
+  margin: 20px; 
+ height: 50px;
+}
+
+/* card-1 p styling */
+.card-1 p{
+  text-align: center;
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  word-wrap: break-word;
+  word-spacing: 2px;
+}
+
+/* styling for links in card 1 */
+.card-1 a{
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 30px 150px;
+  font-weight: bold;
+  border: 2px solid  rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+/* hover effect for card 1 */
+.card-1 a:hover{
+  font-size: large;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* styling for form element  */
+form{
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) );
+  margin-top: -10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+  /* Style the input elements and the submit button */
+ form.contain input[type=email]{
+    padding: 15px;
+    font-size: 20px;
+    width: 30%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    background: whitesmoke;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 20px 0 0 20px;
+  }
+
+  /* Style the submit button */
+   form.contain button{
+    background-color:  rgba(0, 0, 0, 0.4);
+    color: white;
+    width: auto;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+  }
+  
+  /* hover effect for button  */
+  form.contain button:hover {
+    background-color:  hsla(0, 0%, 0%, 0.51);
+
+  }
+  
+  /* general styling for the footer container  */
+  .foot-container{
+    max-width: 100vw;
+    margin: auto;
+    line-height: 1.5;
+     
+  }
+
+  /* general spacing and sizing for footer row  */
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* spacing and sizing the various footer column  */
+  .footer-column{
+    width: 22%;
+    padding: 0 15px;
+  }
+
+  /* styling for the ul  */
+  ul {
+    list-style: none;
+  }
+
+  /* styling effect for h4 element in footer  */
+  .footer-column h4{
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  /* adding underlined style effect for heading in footer */
+  .footer-column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: hsla(180, 100%, 50%, 0.9);
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+  }
+
+  /* bottom margin between links in footer */
+  .footer-column ul li:not(:last-child){
+    margin-bottom: 10px;
+
+  }
+
+  /* styling for links in footer */
+  .footer-column ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    color: #e9e6e6;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  /* hover effect for links in footer */
+  .footer-column ul li a:hover{
+    color: hsla(180, 100%, 50%, 0.9);
+    padding-left: 10px;
+  }
+
+  /* styling for the social media icons */
+  .footer-column .social-icon a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255,255,255,0.3);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 50px;
+    color:  hsla(180, 100%, 50%, 0.9);
+    border-radius: 50%;
+    transition: all 0.5s ease
+  }
+
+  /* hover effect for social media icons */
+  .footer-column .social-icon a:hover{
+    color: #000;
+    background-color: hsla(180, 100%, 50%, 0.9);
+  }
+
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid hsla(180, 100%, 50%, 0.9);
+    margin: 20px auto;
+  }
+
+  /* class for styling copyright txt */
+.copyright{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+  /* Setting background image for the footer section */
+  .footer{
+    background-image: linear-gradient(to left, rgba(36, 38, 43, 0.9),rgba(0, 0, 0, 0.8) ),url(../image/IBT-logos_transparent.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 70px 0;
+    height: auto;
+  }
+  
