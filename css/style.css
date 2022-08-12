@@ -1,0 +1,793 @@
+  :root{
+    --white:#fff;
+    --ash:#ffee80;
+    --black: #000;
+    --bluish-black:#000033;
+    --light-color:rgb(211, 211, 211);
+    --blue:#0000e6;
+    --light-blue:#b6b6fc;
+    --box-shadow:0 .9rem 1.5rem rgba(0,0,0,.6);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+  *{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  body{
+    background:linear-gradient(to left, #fff, rgba(248, 156, 95, 0.719), rgba(34, 17, 17, 0.699));
+    /* background-color: var(--white); */
+  }
+
+  /* styling for section ids */
+#services{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+header{
+  position: relative;
+  top: 0; left: 0; right: 0;
+  background-color: #000;
+}
+  .head{
+      width: 100%;
+      display: flex;
+      /* position: sticky; */
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      height: auto;
+      box-shadow: var(--box-shadow);
+      background:linear-gradient(to left, #fff, rgba(248, 156, 95, 0.719), rgba(34, 17, 17, 0.3),white);
+    
+    }
+  
+  .head span{
+      color: var(--blue);
+      font-size: 20px;
+  }
+
+  .head img{
+      margin-top: -5px;
+     }
+   
+  .avatar{
+      width: 60px;
+      height: 50px;
+      border-radius: 50%;
+  }  
+
+ .navbar{
+      display: inline;
+      justify-content: space-between;
+     }
+
+  /*Style the links inside the navigation bar */
+  .navbar a{
+      padding: 15px;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bolder;
+  }
+  
+     .navbar a:hover{
+       color: var(--light-blue);
+       transition: .3s ease in;
+  }
+
+  /* adding a dropdown list upon hover */
+  .dropdown{
+    display: inline;
+    position: relative;
+  }
+
+  .dropdown-content{
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content a:hover{
+    background-color: #9393e0;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .dropdown:hover .dropdown-content{
+    display: block;
+    border-radius: 10px;
+    background-color: var(--light-color)
+  }
+
+     /* Style the search field */
+  .search-bar{
+      border: outset 2px blue;
+      width: 15%;
+      height: 40px;
+      background-color: whitesmoke;
+      border-radius: 25px;
+      padding: .5em;
+      color: blue;
+    }
+
+form.search input[type=text]{
+    padding: 1em;
+    font-size: .5em;
+    border: none;
+    height: 100%;
+    float: left;
+    width: 50%;
+    background: whitesmoke;
+    outline: none;
+    color: blue;
+     }
+
+    /* Style the submit button */
+    form.search button {
+    float: right;
+    width: 25%;
+    padding: .2em;
+    height: 100%;
+    background: whitesmoke;
+    color: #FCAF45;
+    margin: -2px 5px 0 0;
+    border-radius: 15px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+   
+
+    .home{
+      background-color: var(--white);
+      position: relative;
+      background-image: url(../Images/header.jpg);   
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      height: 95vh;
+    }
+
+     .card{
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%,-50%);
+      width: 400px;
+      height: 270px;
+      margin-top: 10px;
+      margin-left: 50px;
+      text-shadow: 1rem -.2rem 15px rgb(0, 0, 0);
+      /* box-shadow: var(--box-shadow); */
+      
+    }
+
+    .card h1{
+      margin: 20px;
+      font-size: 3em;
+      color: var(--white);
+      word-wrap: break-word;
+      word-spacing: 2px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .card p{
+      margin: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: larger;
+      text-transform: capitalize;
+      word-wrap: break-word;
+      color: var(--white);
+      word-spacing: 2px;
+    }
+
+    .anchor{
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .card a{
+     margin-top: 20px;
+     color: var(--white);
+     padding: 12px;
+    display: block;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid  rgba(248, 248, 250, 0.8);
+    border-radius: 30px;
+    }
+
+    .card a:hover{
+      background-color: var(--blue);
+      color: var(--white);
+    }
+
+    /* styling for horizontal line  */
+    hr{
+      width: 75%;
+      border: 0;
+      border-bottom: 2px solid blue;
+      margin: 20px auto;
+    }
+  
+    /* styling for page titles and headings */
+    .title{
+      font-family: 'roboto',sans-serif;
+      margin-top: 2px;
+      padding: 10px;
+      text-align: center;
+      font-size: 30px;
+      color: var(--bluish-black);
+      font-weight: bold;
+      height: auto;
+      text-transform: capitalize;
+      box-shadow: var(--box-shadow);
+    }
+    
+    /* paragraph text attached to headings sizing */
+    .title p{
+      font-size: 0.5em;
+      margin: 10px;
+    }
+
+    .title span{
+      color: #0000e6;
+      font-size: 1.3em;
+    }
+
+    .services{
+      margin-left: 5%;
+      margin-right: 5%;
+      border-radius: 20px;
+    }
+
+    .services .box-container{
+      background: transparent;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      height: auto;
+    }
+
+    .box-container .box{
+      padding:2rem;
+      border-radius: .5rem;
+      box-shadow: var(--box-shadow);
+      border:var(--border);
+      text-align: center;
+      width: 250px;
+      border-radius: 20px;
+      margin-top: 30px;
+  
+    }
+
+    .box-container .box i{
+      height:3rem;
+      width:3rem;
+      line-height: 3rem;
+      border-radius: 50%;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background:blue;
+      color:var(--white);
+  
+    }
+
+    .box h3{
+    font-size: 1.5rem;
+    color:var(--bluish-black);
+    margin: 20px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .box-container .box p{
+    padding:1rem 0;
+    color:#000;
+}
+
+ .box-container .box:hover{
+    background: var(--bluish-black);
+    cursor: pointer;
+}
+
+ .box-container .box:hover h3{
+    color:#fff;
+}
+
+.services .box-container .box:hover p{
+    color:#eee;
+}
+
+.car-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.car-card{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1.5%;
+    box-shadow: var(--box-shadow);
+  }
+
+ 
+.car-image{
+    height: 200px;
+    background-color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.car-image-1{
+  background-image: url(../Images/car-10.png);
+  }
+
+.car-image-2{
+  background-image: url(../Images/car-11.png);
+  }
+
+.car-image-3{
+  background-image: url(../Images/car-13.png);
+  }
+
+.car-image-4{
+  background-image: url(../Images/car-2.png);
+  }
+
+.car-image-5{
+  background-image: url(../Images/car-5.png);
+  }
+
+.car-image-6{
+  background-image: url(../Images/car-4.png);
+  }
+
+.mahindra-image-1{
+  background-image: url(../Mahindra/xuv700-exterior-front-view.png);
+}
+
+.mahindra-image-2{
+  background-image: url(../Mahindra/xuv700-exterior-left-front-view.png);
+}
+
+.mahindra-image-3{
+  background-image: url(../Mahindra/xuv700-exterior-left-rear\ view.png);
+}
+
+.Volvo-image-1{
+  background-image: url(../Volvo/front-left.jpg);
+}
+
+.Volvo-image-2{
+  background-image: url(../Volvo/Volvo-front-view.jpg);
+}
+
+.Volvo-image-3{
+  background-image: url(../Volvo/Back-view.jpg);
+}
+
+.Volvo-image-4{
+  background-image: url(../Volvo/Inside.jpg);
+}
+
+.Volvo-image-5{
+  background-image: url(../Volvo/Engine.jpg);
+}
+
+.Volvo-image-6{
+  background-image: url(../Volvo/Front-inner.jpg);
+}
+
+.lexus-image-1{
+  background-image: url(../lexus/front\ view.jpg);
+}
+
+.lexus-image-2{
+  background-image: url(../lexus/lateral\ view.jpg);
+}
+
+.lexus-image-3{
+  background-image: url(../lexus/direct\ rear\ view.jpg);
+}
+
+.lexus-image-4{
+  background-image: url(../lexus/rigt\ inside\ view.jpg);
+}
+
+.lexus-image-5{
+  background-image: url(../lexus/side\ view.jpg);
+}
+
+.lexus-image-6{
+  background-image: url(../lexus/left\ rear\ view.jpg);
+}
+
+.person-image-1{
+  background-image: url(../Images/pic-2.png);
+}
+
+.person-image-2{
+  background-image: url(../Images/pic-3.png);
+}
+
+.person-image-3{
+  background-image: url(../Images/pic-5.png);
+}
+
+.person-image-4{
+  background-image: url(../Images/pic-1.png);
+}
+
+.car-card h2{
+  color: #3333ca;
+  margin: 20px;
+  text-align: center;
+  }
+
+.car-card p{
+  font-size: larger;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+
+  }
+
+.car-card a{
+  display: block;
+  background-color: #3f3fe2;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  margin: 20px 100px;
+  font-weight: bold;
+  border-radius: 10px;
+  }
+
+  .car-card:hover{
+    background: var(--bluish-black);
+    cursor: pointer;
+    color: white;
+  }
+
+  .car-card a:hover{
+    background-color: rgb(240, 231, 231);
+    color: rgb(24, 24, 245);
+    font-weight: bolder;
+    transform: scale(1.1);
+  }
+
+  .see-more-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+  .see-more-btn a{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    width: 150px;
+    height: auto;
+    padding: 15px;
+    color: var(--white);
+    font-weight: bolder;
+    background-color: #1c1caa;
+  }
+
+  .see-more-btn a:hover{
+    background-color: white;
+    color: #040414;
+  }
+
+/* styling for the reviews */
+.review-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.review-container .review-card{
+  display: flex;
+  max-width: 400px;
+  height: 200px;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  margin: 20px;
+}
+
+.review-container .review-card .review-person{
+  min-width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 20px;
+  border-radius: 30px;
+}
+
+.review-container .review-card:hover{
+  background: var(--bluish-black);
+  cursor: pointer;
+  color: white;
+}
+.review-container .review-card img{
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.review-container .review-card h3{
+  font-size: 1.5rem;
+  margin: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.review-container .review-card p{
+  margin: 10px;
+  padding: 5px;
+}
+
+
+ /* styling for form element  */
+ form.contain{
+  background: url(../Images/letter-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  height: max-content;
+}
+
+  /* Style the input elements and the submit button */
+ form.contain input[type=email]{
+    padding: 15px;
+    font-size: 20px;
+    width: 30%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    background: whitesmoke;
+    border: 2px solid rgba(0, 0, 255, 0.8);
+    border-radius: 20px 0 0 20px;
+  }
+
+  /* Style the submit button */
+   form.contain button{
+    background-color:  rgba(0, 0, 255, 0.4);
+    color: white;
+    width: auto;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+  }
+  
+  /* hover effect for button  */
+  form.contain button:hover {
+    background-color: var(--blue);
+
+  }
+
+  /* Footer section of the page  */
+  
+  /* general styling for the footer container  */
+  .foot-container{
+    max-width: 100vw;
+    margin: auto;
+    line-height: 1.5;
+     
+  }
+
+  /* general spacing and sizing for footer row  */
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* spacing and sizing the various footer column  */
+  .footer-column{
+    width: 22%;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+
+  .footer-column .page{
+    border: none;
+    /* box-shadow: var(--box-shadow); */
+    margin-top: 20%;
+    
+  }
+
+  .footer-column .page h3{
+    color: var(--bluish-black);
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-left: -20px;
+  }
+
+  .footer-column .page p{
+    text-align: left;
+    font-size: 20px;
+    font-family: cursive;
+  }
+
+  /* styling for the ul  */
+  ul {
+    list-style: none;
+  }
+
+  /* styling effect for h4 element in footer  */
+  .footer-column h4{
+    font-size: 25px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  /* adding underlined style effect for heading in footer */
+  .footer-column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: hsla(236, 100%, 50%, 0.9);
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+  }
+
+  /* bottom margin between links in footer */
+  .footer-column ul li:not(:last-child){
+    margin-bottom: 10px;
+
+  }
+
+  /* styling for links in footer */
+  .footer-column ul li a{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  /* hover effect for links in footer */
+  .footer-column ul li a:hover{
+    color: hsla(244, 100%, 50%, 0.966);
+    padding-left: 10px;
+  }
+
+  .footer-column .social-icon i{
+    font-size: 20px;
+  }
+
+  /* styling for the social media icons */
+  .footer-column .social-icon a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0,0,255,1.0);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 55px;
+    color:  hsla(200, 100%, 100%, 0.9);
+    border-radius: 50%;
+    transition: all 0.5s ease
+  }
+
+  .footer-column .social-icon a:nth-of-type(3){
+    background-color: green;
+  }
+
+  .footer-column .social-icon a:nth-of-type(4){
+    background: linear-gradient( #405DE6,#bc2a8d, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)
+  }
+
+
+  /* hover effect for social media icons */
+  .footer-column .social-icon a:hover{
+    color: rgb(11, 15, 243);
+    background-color: hsla(350, 100%, 100%, 0.9);
+    font-size: larger;
+  }
+
+  .footer-column .social-icon a:nth-of-type(3):hover{
+    background-color: white;
+    color: green;
+    font-size: larger;
+  }
+
+  .foot-container p{
+    text-align: center;
+  }
+
+
+  /* Responsive layout - when the screen is less than 600px wide, make some changes to the position and sizin goff some sections and elements */
+  @media screen and (max-width: 700px) {
+    .head{
+      height: 8vh;
+    }
+
+    .home{
+      height: 60vh;
+    }
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+Ste

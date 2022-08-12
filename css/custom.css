@@ -1,0 +1,81 @@
+
+.purchase{
+	width: 320px;
+	height: 500px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: hsla(180, 6%, 94%, 0.842);
+	top: 56%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -52%);
+	padding: 50px 30px;
+	border-radius: 20px;
+}
+
+.purchase h1{
+	margin: -50px 0 25px 0;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.purchase p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.purchase input{
+	width: 100%;
+	margin-bottom: 25px;
+	border: none;
+	border-bottom: 1px solid #fff; 
+	background: transparent;
+	outline: none;
+	height: 45px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.purchase select{
+	color: #fff;
+	background: transparent;
+	padding: 7px;
+}
+.purchase select option{
+	background-color: black;
+}
+
+.purchase select:hover{
+	background-color: black;
+	color: hsl(200, 100%, 50%);
+}
+
+.purchase .links{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.purchase input[type="submit"]{
+	float: right;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	background-color: rgb(0, 225, 255);
+    padding: 15px;
+	text-align: center;
+	margin: 10px 70px;
+	border-style: ridge;
+	border-width: 1px;
+	border-color: aqua;
+	border-radius: 20px;
+	cursor: pointer;
+	text-transform: capitalize;
+
+}
+
+.purchase input[type="submit"]:hover, a:hover{
+	color: white;
+	background: transparent;
+} 

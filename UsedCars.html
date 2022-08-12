@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Used Cars</title>
+
+    <!-- Link to add favicon -->
+    <link rel="icon" type="image/x-icon" href="./Images/auto-favicon.png">
+
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link to add CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <style>
+
+   /*styling for the display class*/
+  .display{
+    padding: 10px;
+    text-align: center;
+    color:white;
+ }
+    
+/*Styling fo\or the view class*/
+.view{
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #212111;
+}
+
+/*an id for the image centering*/
+#img {
+  display: block;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+
+#img:hover{
+  width: 32%;
+}
+
+ /* the appear class */
+
+.appear {
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.buy_button{
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  display: inline-block;
+  border: 2px solid blue;
+  border-radius: 20px;
+
+}
+
+.buy_button:hover{
+    color: rgb(0, 0, 245);
+    background-color: rgb(255, 253, 253);
+}
+
+    </style>
+
+	</head>
+	<body>
+	
+<!--Section for main heading-->
+<header class="head" style="position: sticky;">
+
+  <div style="display: flex;">
+  <img src="./Images/Car.png" alt="Avatar" class="avatar">
+  <h1><a href="index.html">Car<span>Sale</span>.com</a></h1>
+  </div>
+  <!-- Tag for the top navigation bar-->
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="dropdown">
+      <a class="dropbtn" href="#services">Services</a>
+            <!-- <button class="dropbtn">Dropdown</button> -->
+            <div class="dropdown-content">
+              <a href="NewCars.html">New cars</a>
+              <a href="UsedCars.html">Used Cars</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+      <!-- <a href="#review">Reviews</a> -->
+      <a href="contact.html">Contact</a>
+      </nav>
+  <!-- The search bar -->
+   <div class="search-bar">
+  <form class="search" action="">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  </div>
+  </header>
+  <!-- header section ends -->
+
+
+
+
+  <section>
+    <div class="title">
+      USED CARS FOR SALE
+    </div>
+<br><br><br>
+
+    <div>
+      <img id="img" src="./Images/car-1.png" alt="car1">
+      <br><p class="appear">Used Model<br> $500,000.00</p>
+      <div class="view">
+        <a href="purchase.html">
+      <button  class="buy_button">
+        BUY
+      </button></a>
+    </div>
+    </div>
+
+    <br><br><br>
+    <div>
+      <img id="img" src="./Images/car-10.png" alt="car2">
+      <br><p class="appear">Used Model<br> $7,000.00</p>
+      <div class="view">
+      <button  class="buy_button">
+        BUY
+      </button>
+    </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img id="img" src="./Images/car-11.png" alt="car1">
+      <br><p class="appear">Used Model<br> $2,000.00</p>
+      <div class="view">
+      <button  class="buy_button">
+        BUY
+      </button>
+    </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img id="img" src="./Images/car-4.png" alt="car1">
+      <br><p class="appear">Used Model<br> $9,000.00</p>
+      <div class="view">
+      <button  class="buy_button">
+        BUY
+      </button>
+    </div>
+      </div>
+    <br><br><br>
+
+    <div>
+      <img id="img" src="./Images/car-6.png" alt="car1">
+      <br><p class="appear">Used Model<br> $5,000.00</p>
+      <div class="view">
+      <button  class="buy_button">
+        BUY
+      </button>
+    </div>
+    </div>
+  </section>
+
+  <hr><br><br><br><br>
+
+  
+ <hr>
+ 
+ <!-- section for newsletter form -->
+  <section id="newsletter">
+   <h3 class="title">Subscribe for latest updates</h3>
+ 
+   <form id="back" class="contain">
+     <input type="email" placeholder="Email address" name="email" required>
+     <button type="subscribe">
+         SUBSCRIBE
+     </button>
+ </form>
+ </section>
+ <!-- newsletter section end -->
+ 
+  <!-- footer section begins  -->
+  <footer class="foot" id="contact">
+     <div class="foot-container">
+       <div class="row">
+ 
+         <div class="footer-column">
+           <div class="page">
+           <a href="index.html"><h3>CarSale.com</h3></a>
+           <p>A Ride Just For You...</p>
+         </div>
+         </div>
+         
+         <div class="footer-column">
+           <h4>Company</h4>
+           <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="about.html">About us </a></li>
+             <li><a href="#review">Testimonials</a></li>
+           </ul>
+         </div>
+         <div class="footer-column">
+           <h4>Get Help</h4>
+           <ul>
+             <li><a href="FAQ.html">FAQ</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="#newsletter">Newsletter</a></li>
+           </ul>
+         </div>
+         <div class="footer-column">
+           <h4>Services</h4>
+           <ul>
+             <li><a href="NewCars.html">New Cars</a></li>
+             <li><a href="UsedCars.html">Used Cars</a></li>
+             <li><a href="purchase.html">BUY A CAR</a></li>
+           </ul>
+         </div>
+         <div class="footer-column">
+           <h4>Follow Us</h4>
+           <div class="social-icon">
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-twitter"></i></a>
+             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+         </div>
+         </div>
+       </div>
+       <hr>
+       <p class="copyright">CarSale.com © 2022 - All Rights Reserved</p>
+     </div>
+   </footer>
+  <!-- Footer Section ends -->
+
+	</body>
+	</html>
